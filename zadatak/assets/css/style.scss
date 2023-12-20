@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Commissioner', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+header {
+    height: 100px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 101;
+}
+
+#heading {
+    width: 100%;
+    height: auto;
+    background-image: url('../img/head1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .headingText {
+        width: 80%;
+
+        #num {
+            font-size: 100px;
+            padding: 20px;
+            border-right: 2px solid rgb(252, 252, 252);
+            font-family: 'Fjalla One', sans-serif;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        #tex {
+            font-size: 50px;
+            padding: 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 5px;
+        }
+    }
+}
+
+#deals {
+    background-image: url('../img/bg19.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20px;
+
+    .deal {
+        height: auto;
+        backdrop-filter: blur(5px) saturate(180%);
+        -webkit-backdrop-filter: blur(1px) saturate(180%);
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 12px;
+        box-shadow: 0 0 7px #ffffff49;
+        padding: 20px;
+        color: white;
+        margin: 20px auto;
+
+        .deal-text {
+            width: 70%;
+
+            h1 {
+                font-size: 27px;
+                font-weight: bold;
+            }
+
+            h2, h3 {
+                font-size: 15px;
+                margin: 10px;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 13px;
+                margin: 10px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .deal-buttons {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                margin: 15px;
+                padding: 10px;
+                border-radius: 20px;
+                width: 60%;
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+                font-size: 18px;
+            }
+
+            .circle {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                background-color: rgb(0, 0, 0);
+                box-shadow: 0 0 2px 2px rgba(14, 249, 229, 0.227);
+                color: black;
+                font-size: 12px;
+
+                i {
+                    color: rgba(255, 255, 255, 0.695) !important;
+                }
+            }
+        }
+    }
+}
